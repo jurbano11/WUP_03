@@ -72,5 +72,5 @@ plot(TukeyHSD(model1))
 This graph shows the difference between how much each seat drinks. We learned that the student in the front and the middle of the class drink about the same amountbut the kids in the back take over the amount drank by the front and middle seats so they drank the most
 
 ## Conclusions
-
+Because the students in the back of the class are shown to drink much more than the kids in the front and middle parts. The graphs have shown that there is a night and day difference from the kids who sit in the back, making them more suceptible to alcoholism. 
 

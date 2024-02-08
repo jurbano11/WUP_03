@@ -57,6 +57,22 @@ In the data it shows that the people that in the middle are drinking a lot more 
 
 
 ## Inferential Tests
+```{r}
+
+model1 <- aov(alcohol~Seat,data=davisdata)
+
+summary.aov(model1)
+
+```
+
+
+```{r}
+
+plot(TukeyHSD(model1))
+
+```
+
+This graph shows the difference between how much each seat drinks. We learned that the student in the front and the middle of the class drink about the same amountbut the kids in the back take over the amount drank by the front and middle seats so they drank the most
 
 ## Conclusions
 

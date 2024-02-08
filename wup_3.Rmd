@@ -24,15 +24,13 @@ mutate(across(where(is.character), as.factor))
 ## you choose to sit in??
 
 ## Now with ggplot - first select the basic data
-
 ```{r}
-basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
-```
-## Now add in boxplot
-
-```{r}
-basicCN + geom_boxplot()
-```
+ggplot(davisdata, aes(x = Seat, y = alcohol)) +
+  geom_boxplot(notch = TRUE, outlier.colour = "red") +
+  labs(title = "Notched Box Plot of Alcohol by Seat") +
+  theme(plot.title = element_text(hjust = 0.5))
+```  
+  
 
 ```{r}
 library(ggplot2)
@@ -50,6 +48,13 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 ```
 
 ## Numerical Summarys 
+
+```{r}
+favstats(alcohol~Seat,data=davisdata)
+```
+
+In the data it shows that the people that in the middle are drinking a lot more then the people im the back and the front. Also in the data you can see that min all equals 0 but in the median it shows that the back have 4 and the front has 0 and the middle has 1. Thats a hugh difference. most of the people are sitting in the middle which is 83 and the rest and evened out in the back and the front and you can find that in the letter "n".
+
 
 ## Inferential Tests
 

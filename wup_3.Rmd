@@ -65,6 +65,7 @@ summary.aov(model1)
 
 ```
 
+This graph shows a significant result since the numbers are smaller than 0.05
 
 ```{r}
 

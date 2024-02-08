@@ -40,12 +40,8 @@ ggplot(davisdata, aes(x = Seat, y = alcohol)) +
   labs(title = "Boxplot of Alcohol by Seat")
 
 ```
-  
-### get fancy  
 
-```{r}
-basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
-```
+The graphs show that the students in the back of the class have much greater results than the ones that sit in the front or middle, meaning that the ones that sit in the back have higher liklihood of picking up alcohol.
 
 ## Numerical Summarys 
 
